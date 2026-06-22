@@ -2,9 +2,92 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>МайстерВдомі | Ремонт Квартир та Будинків в Одесі</title>
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>МайстерВдомі | Ремонт Квартир та Будинків під ключ в Одесі</title>
+    <meta name="description" content="Будівництво будинків, ремонт квартир під ключ в Одесі. Плитка, ламінат, підлога, сантехніка, шпаклювання, електрика. 10+ років досвіду, 450+ об'єктів, 3 роки гарантії. Ціни нижче ринку.">
+    <meta name="theme-color" content="#0284c7">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="МайстерВдомі | Ремонт Квартир та Будинків під ключ в Одесі">
+    <meta property="og:description" content="Професійна інженерна команда: сантехніка, електрика, кахель, підлога. 10+ років практики, 3 роки гарантії.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200">
+    <meta property="og:locale" content="uk_UA">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https://images.unsplash.com data: https://api.telegram.org; font-src 'self'; connect-src 'self' https://api.telegram.org; object-src 'none'; base-uri 'self'; form-action 'self';">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230284c7' stroke-width='3'%3E%3Cpath d='M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "МайстерВдомі",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200",
+      "telephone": "+380983013344",
+      "founder": { "@type": "Person", "name": "Гашимов Гадір" },
+      "areaServed": { "@type": "City", "name": "Одеса" },
+      "address": { "@type": "PostalAddress", "addressLocality": "Одеса", "addressCountry": "UA" },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+    <script>
+    var ICONS = {
+      'calculator': '<rect width="16" height="20" x="4" y="2" rx="2" /> <line x1="8" x2="16" y1="6" y2="6" /> <line x1="16" x2="16" y1="14" y2="18" /> <path d="M16 10h.01" /> <path d="M12 10h.01" /> <path d="M8 10h.01" /> <path d="M12 14h.01" /> <path d="M8 14h.01" /> <path d="M12 18h.01" /> <path d="M8 18h.01" />',
+      'check-circle-2': '<circle cx="12" cy="12" r="10" /> <path d="m9 12 2 2 4-4" />',
+      'clock': '<circle cx="12" cy="12" r="10" /> <path d="M12 6v6l4 2" />',
+      'droplet': '<path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z" />',
+      'layers': '<path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" /> <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" /> <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" />',
+      'layout-grid': '<rect width="7" height="7" x="3" y="3" rx="1" /> <rect width="7" height="7" x="14" y="3" rx="1" /> <rect width="7" height="7" x="14" y="14" rx="1" /> <rect width="7" height="7" x="3" y="14" rx="1" />',
+      'map-pin': '<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" />',
+      'menu': '<path d="M4 5h16" /> <path d="M4 12h16" /> <path d="M4 19h16" />',
+      'moon': '<path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" />',
+      'phone': '<path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />',
+      'send': '<path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" /> <path d="m21.854 2.147-10.94 10.939" />',
+      'star': '<path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />',
+      'user': '<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /> <circle cx="12" cy="7" r="4" />',
+      'wrench': '<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" />',
+      'zap': '<path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" />',
+      'sun': '<circle cx="12" cy="12" r="4" /> <path d="M12 2v2" /> <path d="M12 20v2" /> <path d="m4.93 4.93 1.41 1.41" /> <path d="m17.66 17.66 1.41 1.41" /> <path d="M2 12h2" /> <path d="M20 12h2" /> <path d="m6.34 17.66-1.41 1.41" /> <path d="m19.07 4.93-1.41 1.41" />',
+      'x': '<path d="M18 6 6 18" /> <path d="m6 6 12 12" />'
+    };
+
+        function renderIcons(root) {
+            try {
+                (root || document).querySelectorAll('[data-lucide]').forEach(function (el) {
+                    var name = el.getAttribute('data-lucide');
+                    var inner = ICONS[name];
+                    if (!inner) return;
+
+                    var svgNS = 'http://www.w3.org/2000/svg';
+                    var svg = document.createElementNS(svgNS, 'svg');
+                    svg.setAttribute('width', '24');
+                    svg.setAttribute('height', '24');
+                    svg.setAttribute('viewBox', '0 0 24 24');
+                    svg.setAttribute('fill', 'none');
+                    svg.setAttribute('stroke', 'currentColor');
+                    svg.setAttribute('stroke-width', '2');
+                    svg.setAttribute('stroke-linecap', 'round');
+                    svg.setAttribute('stroke-linejoin', 'round');
+                    svg.setAttribute('aria-hidden', 'true');
+
+                    Array.prototype.forEach.call(el.attributes, function (attr) {
+                        svg.setAttribute(attr.name, attr.value);
+                    });
+                    var existingClass = el.getAttribute('class') || '';
+                    svg.setAttribute('class', ('lucide lucide-' + name + ' ' + existingClass).trim());
+                    svg.innerHTML = inner;
+
+                    el.replaceWith(svg);
+                });
+            } catch (err) {
+                console.warn('Не вдалося відмалювати іконки:', err);
+            }
+        }
+    </script>
     <style>
         :root {
             --primary: #0284c7;
@@ -25,7 +108,6 @@
             --glass-border: rgba(255, 255, 255, 0.08);
         }
 
-        /* Стилі для темної теми */
         [data-theme="dark"] {
             --light: #090d16;
             --dark: #f8fafc;
@@ -41,19 +123,15 @@
             --glass-border: rgba(2, 132, 199, 0.15);
         }
 
-        /* Захист контенту від копіювання */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            scroll-behavior: smooth;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
             -webkit-tap-highlight-color: transparent;
         }
+
+        html { scroll-behavior: smooth; }
 
         body {
             color: var(--text-main);
@@ -63,16 +141,34 @@
             transition: background-color 0.4s ease, color 0.4s ease;
         }
 
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        select:focus-visible,
+        textarea:focus-visible {
+            outline: 3px solid var(--accent);
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.001ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.001ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
         img {
             -webkit-user-drag: none;
             user-drag: none;
             object-fit: cover;
         }
 
-        /* Плавні ефекти появи (Scroll Reveal) */
         .reveal {
             opacity: 0;
-            transform: translateY(30px) scale(0.99);
+            transform: translateY(40px) scale(0.98);
             transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
@@ -81,7 +177,6 @@
             transform: translateY(0) scale(1);
         }
 
-        /* Елітна шапка сайту */
         header {
             background-color: var(--glass-bg);
             backdrop-filter: blur(20px);
@@ -109,8 +204,8 @@
             gap: 10px;
             text-decoration: none;
         }
-        .logo span { color: #fff; }
-        .logo i { color: var(--accent); stroke-width: 2.5; }
+        .logo span { color: #fff; transition: var(--transition); }
+        .logo [data-lucide] { color: var(--accent); stroke-width: 2.5; }
 
         nav { display: flex; align-items: center; }
         nav a {
@@ -137,6 +232,17 @@
         nav a:hover::after, nav a.active-nav::after { width: 100%; }
         nav a:hover, nav a.active-nav { color: #fff; }
 
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            width: 0%;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            z-index: 1001;
+            transition: width 0.1s linear;
+        }
+
         .menu-btn {
             display: none;
             background: none;
@@ -145,7 +251,6 @@
             cursor: pointer;
         }
 
-        /* Кнопка зміни теми */
         .theme-toggle {
             position: fixed;
             bottom: 25px;
@@ -165,15 +270,14 @@
             transition: var(--transition);
         }
         .theme-toggle:hover {
-            transform: scale(1.1) rotate(30deg);
+            transform: scale(1.1) rotate(45deg);
             background: var(--primary-hover);
         }
 
-        /* Ефектний головний екран */
         .hero {
             position: relative;
-            background: linear-gradient(rgba(9, 13, 22, 0.65), rgba(9, 13, 22, 0.85)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800') no-repeat center center/cover;
-            height: 75vh;
+            background: linear-gradient(rgba(9, 13, 22, 0.6), rgba(9, 13, 22, 0.85)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800') no-repeat center center/cover;
+            height: 85vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -181,35 +285,61 @@
             text-align: center;
             color: #fff;
             padding: 24px;
+            overflow: hidden;
+        }
+        .hero::before, .hero::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.35;
+            pointer-events: none;
+            animation: float 12s ease-in-out infinite;
+        }
+        .hero::before {
+            width: 380px; height: 380px;
+            background: var(--primary);
+            top: -120px; left: -80px;
+        }
+        .hero::after {
+            width: 320px; height: 320px;
+            background: var(--accent);
+            bottom: -100px; right: -60px;
+            animation-delay: -6s;
+        }
+        .hero > * { position: relative; z-index: 1; }
+        @keyframes float {
+            0%, 100+px, -20px) scale(1.1); }
         }
         .hero h1 {
-            font-size: clamp(24px, 4.5vw, 48px);
-            margin-bottom: 20px;
+            font-size: clamp(26px, 5vw, 54px);
+            margin-bottom: 24px;
             text-transform: uppercase;
             font-weight: 900;
+            letter-spacing: 0.5px;
             line-height: 1.2;
             max-width: 1100px;
-            animation: fadeInDown 0.8s ease;
+            animation: fadeInDown 1s ease;
         }
         .hero h1 span { color: var(--accent); }
         .hero p {
-            font-size: clamp(15px, 1.8vw, 19px);
-            margin-bottom: 35px;
+            font-size: clamp(15px, 2vw, 20px);
+            margin-bottom: 40px;
             max-width: 800px;
             color: #cbd5e1;
-            animation: fadeInUp 0.8s ease;
+            animation: fadeInUp 1s ease;
         }
 
         .btn {
             background-color: var(--primary);
             color: #fff;
-            padding: 16px 38px;
+            padding: 18px 42px;
             text-decoration: none;
             font-weight: 700;
             border-radius: 50px;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             transition: var(--transition);
             border: none;
             cursor: pointer;
@@ -220,163 +350,210 @@
         }
         .btn:hover {
             background-color: var(--primary-hover);
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(2, 132, 199, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px rgba(2, 132, 199, 0.5);
         }
-        .btn i { transition: var(--transition); }
-        .btn:hover i { transform: translateX(4px); }
+        .btn [data-lucide] { transition: var(--transition); }
+        .btn:hover [data-lucide] { transform: translateX(5px); }
 
-        /* Контентні секції */
         section {
-            padding: 90px 24px;
+            padding: 100px 24px;
             max-width: 1400px;
             margin: 0 auto;
         }
         .section-title {
             text-align: center;
-            font-size: clamp(24px, 3.5vw, 36px);
-            margin-bottom: 55px;
+            font-size: clamp(24px, 4vw, 38px);
+            margin-bottom: 60px;
             text-transform: uppercase;
             font-weight: 900;
             color: var(--text-title);
+            letter-spacing: 0.5px;
         }
         .section-title::after {
             content: '';
             display: block;
-            width: 55px;
+            width: 60px;
             height: 4px;
             background-color: var(--accent);
-            margin: 14px auto 0;
+            margin: 15px auto 0;
             border-radius: 2px;
         }
 
-        /* Блок лічильників */
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
             max-width: 1200px;
             margin: 0 auto;
         }
         .stat-card {
             background: var(--bg-card);
-            padding: 35px 24px;
+            padding: 40px 24px;
             border-radius: 20px;
             box-shadow: var(--shadow-sm);
             border: 1px solid var(--border-color);
-            border-bottom: 4px solid var(--primary);
+            border-bottom: 5px solid var(--primary);
             text-align: center;
             transition: var(--transition);
         }
-        .stat-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
-        .stat-number { font-size: 44px; font-weight: 900; color: var(--text-title); margin-bottom: 5px; }
+        .stat-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+        .stat-number { font-size: 46px; font-weight: 900; color: var(--text-title); margin-bottom: 5px; }
+        .stat-card p { font-weight: 600; color: var(--text-main); }
 
-        /* Картки послуг */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
         .card {
             background: var(--bg-card);
-            padding: 35px 25px;
-            border-radius: 20px;
+            padding: 40px 30px;
+            border-radius: 24px;
             box-shadow: var(--shadow-sm);
             transition: var(--transition);
             border: 1px solid var(--border-color);
         }
-        .card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: var(--primary); }
+        .card:hover { transform: translateY(-10px); box-shadow: var(--shadow-lg); border-color: var(--primary); }
         .card .icon-wrapper {
             background: #e0f2fe;
             color: var(--primary);
-            width: 55px;
-            height: 55px;
-            border-radius: 14px;
+            width: 60px;
+            height: 60px;
+            border-radius: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 22px;
+            margin-bottom: 25px;
             transition: var(--transition);
         }
-        [data-theme="dark"] .icon-wrapper { background: #0c1e36; }
-        .card:hover .icon-wrapper { background: var(--primary); color: #fff; transform: scale(1.08) rotate(3deg); }
-        .card h3 { margin-bottom: 12px; font-size: 20px; font-weight: 800; color: var(--text-title); }
+        .card:hover .icon-wrapper { background: var(--primary); color: #fff; transform: scale(1.1) rotate(5deg); }
+        .card h3 { margin-bottom: 15px; font-size: 21px; font-weight: 800; color: var(--text-title); }
+        .card p { color: var(--text-main); font-size: 15.5px; }
 
-        /* Масштабна сітка великого портфоліо */
-        .portfolio-tabs { display: flex; justify-content: center; gap: 10px; margin-bottom: 45px; flex-wrap: wrap; }
+        .portfolio-tabs { display: flex; justify-content: center; gap: 12px; margin-bottom: 50px; flex-wrap: wrap; }
         .tab-btn {
             background: var(--border-color);
             border: none;
-            padding: 10px 24px;
+            padding: 12px 28px;
             border-radius: 30px;
             cursor: pointer;
             font-weight: 700;
             transition: var(--transition);
             color: var(--text-title);
         }
-        .tab-btn.active, .tab-btn:hover { background-color: var(--primary); color: #fff; box-shadow: 0 6px 15px rgba(2, 132, 199, 0.3); }
+        .tab-btn.active, .tab-btn:hover { background-color: var(--primary); color: #fff; box-shadow: 0 8px 20px rgba(2, 132, 199, 0.3); }
         
         .portfolio-grid { 
             display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
             gap: 30px;
         }
         .portfolio-item {
             background: var(--bg-card);
-            border-radius: 20px;
+            border-radius: 24px;
             overflow: hidden;
             box-shadow: var(--shadow-sm);
             transition: var(--transition);
             border: 1px solid var(--border-color);
         }
-        .portfolio-item:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
-        .portfolio-img { width: 100%; height: 280px; background-size: cover; background-position: center; transition: transform 0.6s ease; }
-        .portfolio-item:hover .portfolio-img { transform: scale(1.04); }
-        .portfolio-info { padding: 25px; }
-        .portfolio-info h3 { font-size: 19px; margin-bottom: 6px; color: var(--text-title); font-weight: 800; }
+        .portfolio-item:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+        .portfolio-img-wrap { width: 100%; height: 320px; overflow: hidden; }
+        .portfolio-img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1); }
+        .portfolio-item:hover .portfolio-img { transform: scale(1.06); }
+        .portfolio-info { padding: 30px; }
+        .portfolio-info h3 { font-size: 20px; margin-bottom: 8px; color: var(--text-title); font-weight: 800; }
+        .portfolio-info p { color: var(--text-main); font-size: 15px; }
 
-        /* Картки відгуків */
         .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
         .review-card {
             background: var(--bg-card);
-            padding: 35px;
-            border-radius: 20px;
+            padding: 40px;
+            border-radius: 24px;
             box-shadow: var(--shadow-sm);
             border: 1px solid var(--border-color);
-            border-top: 4px solid var(--primary);
+            border-top: 5px solid var(--primary);
+            transition: var(--transition);
         }
-        .review-name { font-weight: 800; font-size: 18px; color: var(--text-title); }
-        .review-stars { color: var(--accent); display: flex; gap: 4px; margin: 5px 0 12px; }
-        .review-text { color: var(--text-main); font-style: italic; font-size: 15px; }
+        .review-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+        .review-name { font-weight: 800; font-size: 19px; color: var(--text-title); }
+        .review-stars { color: var(--accent); display: flex; gap: 5px; margin: 6px 0 15px; }
+        .review-text { color: var(--text-main); font-style: italic; font-size: 15.5px; line-height: 1.7; }
 
-        /* Розумний Калькулятор */
-        .calculator-box { background: var(--bg-card); padding: 40px 30px; border-radius: 24px; box-shadow: var(--shadow-lg); max-width: 680px; margin: 0 auto; border: 1px solid var(--border-color); }
-        .form-group { margin-bottom: 22px; }
-        .form-group label { display: block; margin-bottom: 8px; font-weight: 700; color: var(--text-title); font-size: 15px; }
-        .form-group select, .form-group input { width: 100%; padding: 13px 16px; border: 2px solid var(--border-color); border-radius: 12px; background-color: var(--light); color: var(--text-title); outline: none; transition: var(--transition); font-weight: 600; font-size: 15px; }
-        .form-group select:focus, .form-group input:focus { border-color: var(--primary); background-color: var(--bg-card); }
-        .calc-result { font-size: 20px; font-weight: 900; text-align: center; margin-top: 30px; padding: 20px; background: #f0f9ff; border-radius: 14px; border-left: 6px solid var(--primary); color: #0f172a; transition: var(--transition); }
+        .calculator-box { background: var(--bg-card); padding: 45px 35px; border-radius: 24px; box-shadow: var(--shadow-lg); max-width: 700px; margin: 0 auto; border: 1px solid var(--border-color); }
+        .form-group { margin-bottom: 25px; }
+        .form-group label { display: block; margin-bottom: 10px; font-weight: 700; color: var(--text-title); font-size: 15px; }
+        .form-group select, .form-group input { width: 100%; padding: 14px 18px; border: 2px solid var(--border-color); border-radius: 14px; background-color: var(--light); color: var(--text-title); outline: none; transition: var(--transition); font-weight: 600; font-size: 16px; }
+        .form-group select:focus, .form-group input:focus { border-color: var(--primary); background-color: var(--bg-card); box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.15); }
+        .calc-result { font-size: 22px; font-weight: 900; text-align: center; margin-top: 35px; padding: 24px; background: #f0f9ff; border-radius: 16px; border-left: 6px solid var(--primary); color: #0f172a; transition: var(--transition); }
         [data-theme="dark"] .calc-result { background: #0c1e36; color: #f1f5f9; }
-        #total-price { color: var(--primary); font-size: 24px; }
+        #total-price { color: var(--primary); font-size: 26px; }
 
-        /* FAQ Аккордеон */
         .faq-container { max-width: 850px; margin: 0 auto; }
-        .faq-item { background: var(--bg-card); margin-bottom: 12px; border-radius: 14px; box-shadow: var(--shadow-sm); overflow: hidden; border: 1px solid var(--border-color); }
-        .faq-question { padding: 20px 25px; font-weight: 700; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 16px; color: var(--text-title); }
-        .faq-question span { background: var(--light); width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--text-title); transition: var(--transition); }
-        .faq-answer { padding: 0 25px; max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1); color: var(--text-main); font-size: 15px; }
+        .faq-item { background: var(--bg-card); margin-bottom: 15px; border-radius: 16px; box-shadow: var(--shadow-sm); overflow: hidden; border: 1px solid var(--border-color); transition: var(--transition); }
+        .faq-question {
+            width: 100%; text-align: left; background: none; border: none; font-family: inherit;
+            padding: 22px 28px; font-weight: 700; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 17px; color: var(--text-title);
+        }
+        .faq-question span { background: var(--light); width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: var(--transition); font-weight: 800; color: var(--text-title); flex-shrink: 0; }
+        .faq-question[aria-expanded="true"] span { background: var(--primary); color: #fff; transform: rotate(180deg); }
+        .faq-answer { padding: 0 28px; max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1); color: var(--text-main); font-size: 15.5px; }
 
-        /* Блок контактів */
-        .contact-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; background: var(--bg-card); padding: 40px; border-radius: 24px; box-shadow: var(--shadow-lg); max-width: 1200px; margin: 0 auto; border: 1px solid var(--border-color); }
-        .contact-item { display: flex; align-items: center; gap: 15px; margin: 20px 0; }
-        .contact-item .icon-box { background: #e0f2fe; color: var(--primary); width: 45px; height: 45px; border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+        .form-error { color: #ef4444; font-size: 13px; font-weight: 600; margin: -12px 0 14px; min-height: 16px; }
+        .contact-form input.invalid, .contact-form textarea.invalid { border-color: #ef4444; }
+
+        .toast {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-120%);
+            background: var(--bg-card);
+            color: var(--text-title);
+            border: 1px solid var(--border-color);
+            border-left: 5px solid var(--primary);
+            padding: 18px 26px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            z-index: 1100;
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            max-width: 90vw;
+        }
+        .toast.show { transform: translateX(-50%) translateY(0); }
+        .toast [data-lucide] { color: #22c55e; flex-shrink: 0; }
+
+        .contact-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; background: var(--bg-card); padding: 45px; border-radius: 28px; box-shadow: var(--shadow-lg); max-width: 1200px; margin: 0 auto; border: 1px solid var(--border-color); }
+        .contact-item { display: flex; align-items: center; gap: 18px; margin: 24px 0; }
+        .contact-item .icon-box { background: #e0f2fe; color: var(--primary); width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; transition: var(--transition); }
         [data-theme="dark"] .contact-item .icon-box { background: #0c1e36; }
-        .contact-form input, .contact-form textarea { width: 100%; padding: 14px 18px; margin-bottom: 16px; border: 2px solid var(--border-color); background: var(--light); color: var(--text-title); border-radius: 12px; outline: none; font-size: 15px; transition: var(--transition); }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 14px 18px; margin-bottom: 18px; border: 2px solid var(--border-color); background: var(--light); color: var(--text-title); border-radius: 14px; outline: none; font-size: 15px; transition: var(--transition); }
         .contact-form input:focus, .contact-form textarea:focus { border-color: var(--primary); background: var(--bg-card); }
 
-        footer { background-color: #090d16; color: #94a3b8; text-align: center; padding: 35px 20px; font-size: 14px; border-top: 1px solid rgba(255,255,255,0.05); }
+        .visually-hidden {
+            position: absolute;
+            width: 1px; height: 1px;
+            padding: 0; margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
 
-        /* Ключові ефекти шапки */
-        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
-        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        footer { background-color: #090d16; color: #94a3b8; text-align: center; padding: 40px 20px; font-size: 14px; border-top: 1px solid rgba(255,255,255,0.05); }
 
-        /* Адаптивна мобільна версія */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 1024px) {
+            header { padding: 15px 30px; }
+            .portfolio-grid { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+        }
+
         @media (max-width: 992px) {
             nav { 
                 display: none; 
@@ -386,78 +563,97 @@
                 left: 0; 
                 width: 100%; 
                 background: var(--glass-bg); 
-                backdrop-filter: blur(20px);
-                -webkit-backdrop-filter: blur(20px);
-                padding: 25px; 
+                backdrop-filter: blur(25px);
+                -webkit-backdrop-filter: blur(25px);
+                padding: 30px; 
                 border-bottom: 1px solid var(--glass-border);
-                transform: translateY(-15px);
+                transform: translateY(-20px);
                 opacity: 0;
                 transition: transform 0.4s ease, opacity 0.4s ease;
             }
             nav.open { display: flex; transform: translateY(0); opacity: 1; }
-            nav a { margin: 12px 0; font-size: 17px; width: 100%; text-align: center; }
+            nav a { margin: 15px 0; font-size: 18px; width: 100%; text-align: center; }
             .menu-btn { display: block; }
-            section { padding: 65px 20px; }
+            section { padding: 70px 20px; }
         }
 
         @media (max-width: 480px) {
             header { padding: 15px 20px; }
-            .logo { font-size: 20px; }
-            .hero { height: 85vh; padding: 15px; }
-            .btn { width: 100%; justify-content: center; }
+            .logo { font-size: 21px; }
+            .hero { height: 90vh; padding: 16px; }
+            .btn { width: 100%; justify-content: center; padding: 16px 28px; }
             .portfolio-grid { grid-template-columns: 1fr; }
             .contact-container { padding: 25px; }
-            .calculator-box { padding: 25px 20px; }
+            .calculator-box { padding: 30px 20px; }
+            .theme-toggle { bottom: 15px; right: 15px; width: 50px; height: 50px; }
         }
     </style>
 </head>
-<body oncontextmenu="return false;">
+<body>
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem('mv-theme');
+                var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (saved === 'dark' || (!saved && prefersDark)) {
+                    document.body.setAttribute('data-theme', 'dark');
+                }
+            } catch (err) {}
+        })();
+    </script>
 
-    <button class="theme-toggle" onclick="toggleTheme()">
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <i data-lucide="check-circle-2"></i>
+        <span id="toast-text">Готово</span>
+    </div>
+
+    <button class="theme-toggle" onclick="toggleTheme()" title="Змінити тему" aria-label="Перемкнути темну/світлу тему" aria-pressed="false">
         <i data-lucide="moon" id="theme-icon"></i>
     </button>
 
     <header>
-        <a href="#home" class="logo" onclick="navigateTo('home')">
+        <a href="#page-home" class="logo" onclick="navigateTo('home', event)">
             <i data-lucide="wrench"></i> Майстер<span>Вдомі</span>
         </a>
-        <button class="menu-btn" onclick="toggleMenu()">
+        <button class="menu-btn" onclick="toggleMenu()" aria-label="Відкрити меню" aria-expanded="false" aria-controls="nav-menu">
             <i data-lucide="menu" id="menu-icon"></i>
         </button>
         <nav id="nav-menu">
-            <a class="nav-link active-nav" onclick="navigateTo('home')">Головна</a>
-            <a class="nav-link" onclick="navigateTo('services')">Послуги</a>
-            <a class="nav-link" onclick="navigateTo('portfolio')">Портфоліо</a>
-            <a class="nav-link" onclick="navigateTo('reviews')">Відгуки</a>
-            <a class="nav-link" onclick="navigateTo('calculator')">Калькулятор</a>
-            <a class="nav-link" onclick="navigateTo('faq')">FAQ</a>
-            <a class="nav-link" onclick="navigateTo('contacts')">Контакти</a>
+            <a href="#page-home" class="nav-link active-nav" onclick="navigateTo('home', event)">Головна</a>
+            <a href="#page-services" class="nav-link" onclick="navigateTo('services', event)">Послуги</a>
+            <a href="#page-portfolio" class="nav-link" onclick="navigateTo('portfolio', event)">Портфоліо</a>
+            <a href="#page-reviews" class="nav-link" onclick="navigateTo('reviews', event)">Відгуки</a>
+            <a href="#page-calculator" class="nav-link" onclick="navigateTo('calculator', event)">Калькулятор</a>
+            <a href="#page-faq" class="nav-link" onclick="navigateTo('faq', event)">FAQ</a>
+            <a href="#page-contacts" class="nav-link" onclick="navigateTo('contacts', event)">Контакти</a>
         </nav>
     </header>
 
     <div id="page-home">
         <section class="hero" style="max-width: 100%;">
-            <h1>Ремонт у квартирах та будинках: <span>сантехніка, електрика, кахель, підлога</span></h1>
-            <p>Професійна інженерна команда під керівництвом Гашимова Гадіра. Реалізуємо внутрішнє оздоблення будь-якої складності в Одесі.</p>
-            <a onclick="navigateTo('calculator')" class="btn">Розрахувати кошторис <i data-lucide="calculator"></i></a>
+            <h1>Будівництво та ремонт: <span>плитка, ламінат, підлога, сантехніка, шпаклювання</span></h1>
+            <p>Професійна команда під керівництвом Гашимова Гадіра. Будівництво будинків та внутрішнє оздоблення будь-якої складності в Одесі. Ціни нижче ринку!</p>
+            <a href="#page-calculator" onclick="navigateTo('calculator', event)" class="btn">Розрахувати кошторис <i data-lucide="calculator"></i></a>
         </section>
 
         <section id="stats" class="reveal">
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-number">10+</div>
+                    <div class="stat-number"><span class="stat-count" data-target="10">0</span>+</div>
                     <p>Років успішної практики</p>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">450+</div>
+                    <div class="stat-number"><span class="stat-count" data-target="450">0</span>+</div>
                     <p>Зданих квартир та котеджів</p>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">3 роки</div>
+                    <div class="stat-number"><span class="stat-count" data-target="3">0</span> роки</div>
                     <p>Гарантії за договором</p>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">0 грн</div>
+                    <div class="stat-number"><span class="stat-count" data-target="0">0</span> грн</div>
                     <p>Виїзд інженера в Одесі</p>
                 </div>
             </div>
@@ -466,17 +662,17 @@
 
     <div id="page-services">
         <section id="services" class="reveal">
-            <h2 class="section-title">Внутрішні інженерні роботи</h2>
+            <h2 class="section-title">Наші послуги з ремонту та будівництва</h2>
             <div class="grid">
                 <div class="card">
                     <div class="icon-wrapper"><i data-lucide="droplet"></i></div>
                     <h3>Надійна Сантехніка</h3>
-                    <p>Монтаж котельних вузлів, колекторна розводка труб REHAU, встановлення інсталяцій, систем захисту від протікань та монтаж водяної теплої підлоги.</p>
+                    <p>Монтаж котельних вузлів, колекторна розводка труб REHAU, встановлення інсталяцій, систем захисту від протікань (Нептун) та монтаж водяної теплої підлоги.</p>
                 </div>
                 <div class="card">
                     <div class="icon-wrapper"><i data-lucide="zap"></i></div>
                     <h3>Безпечна Електрика</h3>
-                    <p>Комплексний монтаж проводки у квартирах та будинках, розрахунок навантажень, професійне складання щитів та встановлення захисного заземлення.</p>
+                    <p>Комплексний монтаж проводки у квартирах та будинках, розрахунок навантажень, професійне складання щитів, встановлення прохідних вымикачів та захисного заземлення.</p>
                 </div>
                 <div class="card">
                     <div class="icon-wrapper"><i data-lucide="layout-grid"></i></div>
@@ -486,7 +682,32 @@
                 <div class="card">
                     <div class="icon-wrapper"><i data-lucide="layers"></i></div>
                     <h3>Підлога та Оздоблення</h3>
-                    <p>Вирівнювання поверхонь (стяжка, наливна підлога). Монтаж кварцвінілу, ламінату. Механізоване шпаклювання та підготовка стін під фарбування.</p>
+                    <p>Вирівнювання поверхонь (стяжка, наливна підлога). Монтаж кварцвінілу, ламінату та паркету. Механізоване шпаклювання та підготовка стін під фарбування.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-wrapper"><i data-lucide="layout-grid"></i></div>
+                    <h3>Укладка Плитки та Керамограніту</h3>
+                    <p>Укладка настінної та підлогової плитки, керамограніту, мозаїки. Запил під 45°, епоксидна затирка швів, вологоізоляція під плитку у ванних кімнатах та кухнях.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-wrapper"><i data-lucide="layers"></i></div>
+                    <h3>Ламінат та Паркетна Дошка</h3>
+                    <p>Монтаж ламінату, паркетної дошки та інженерного паркету на підкладку або клей. Підготовка основи, встановлення плінтусів та порожків. Гарантія на укладку.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-wrapper"><i data-lucide="droplet"></i></div>
+                    <h3>Сантехніка під Ключ</h3>
+                    <p>Встановлення унітазів, раковин, ванн, душових кабін та змішувачів. Заміна та прокладання труб холодної і гарячої води, монтаж бойлерів та систем фільтрації.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-wrapper"><i data-lucide="wrench"></i></div>
+                    <h3>Шпаклювання та Штукатурка</h3>
+                    <p>Механізоване та ручне шпаклювання стін і стель під фарбування або шпалери. Штукатурка фасадів та внутрішніх приміщень. Підготовка до чистового оздоблення.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-wrapper"><i data-lucide="map-pin"></i></div>
+                    <h3>Будівництво Будинків</h3>
+                    <p>Зведення приватних будинків, котеджів та прибудов під ключ. Фундамент, стіни, покрівля, внутрішнє оздоблення — від проєкту до здачі об'єкта з гарантією 3 роки.</p>
                 </div>
             </div>
         </section>
@@ -496,73 +717,73 @@
         <section id="portfolio" class="reveal">
             <h2 class="section-title">Портфоліо виконаних робіт</h2>
             <div class="portfolio-tabs">
-                <button class="tab-btn active" onclick="filterPortfolio('all')">Всі об'єкти (9)</button>
-                <button class="tab-btn" onclick="filterPortfolio('plumb')">Сантехніка & Кахель</button>
-                <button class="tab-btn" onclick="filterPortfolio('elec')">Електрика</button>
-                <button class="tab-btn" onclick="filterPortfolio('floor')">Підлога & Стіни</button>
+                <button class="tab-btn active" onclick="filterPortfolio('all', event)">Всі об'єкти (9)</button>
+                <button class="tab-btn" onclick="filterPortfolio('plumb', event)">Сантехніка & Кахель</button>
+                <button class="tab-btn" onclick="filterPortfolio('elec', event)">Електрика</button>
+                <button class="tab-btn" onclick="filterPortfolio('floor', event)">Підлога & Стіни</button>
             </div>
             <div class="portfolio-grid">
                 <div class="portfolio-item plumb">
-                    <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1621905252507-b354bc25edac?q=80&w=600');"></div>
+                    <div class="portfolio-img-wrap"><img class="portfolio-img" src="https://images.unsplash.com/photo-1621905252507-b354bc25edac?q=80&w=600" alt="Колекторний вузол у квартирі" loading="lazy" decoding="async" width="600" height="320"></div>
                     <div class="portfolio-info">
                         <h3>Колекторний вузол у квартирі</h3>
                         <p>Розводка труб та підключення системи очищення води і захисту від протікань.</p>
                     </div>
                 </div>
                 <div class="portfolio-item elec">
-                    <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600');"></div>
+                    <div class="portfolio-img-wrap"><img class="portfolio-img" src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600" alt="Електрощит у новобудові" loading="lazy" decoding="async" width="600" height="320"></div>
                     <div class="portfolio-info">
                         <h3>Електрощит у новобудові</h3>
-                        <p>Автоматика Hager, ПЗВ, реле напруги для захисту побутової техніки в квартирі.</p>
+                        <p>Автоматика Hager, ПЗВ, реле напруги для захисту побутової техніки в будинку.</p>
                     </div>
                 </div>
                 <div class="portfolio-item floor">
-                    <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=600');"></div>
+                    <div class="portfolio-img-wrap"><img class="portfolio-img" src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=600" alt="Укладка замкового кварцвінілу" loading="lazy" decoding="async" width="600" height="320"></div>
                     <div class="portfolio-info">
                         <h3>Укладка замкового кварцвінілу</h3>
                         <p>Монтаж підлогового покриття єдиним контуром без стиків по всій площі квартири.</p>
                     </div>
                 </div>
                 <div class="portfolio-item plumb">
-                    <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=600');"></div>
+                    <div class="portfolio-img-wrap"><img class="portfolio-img" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=600" alt="Сучасна ванна кімната з кахлю" loading="lazy" decoding="async" width="600" height="320"></div>
                     <div class="portfolio-info">
-                        <h3>Ванна кімната з кахлю</h3>
+                        <h3>Сучасна ванна кімната з кахлю</h3>
                         <p>Облицювання стін керамогранітом 120х60 із прихованим люком доступу.</p>
                     </div>
                 </div>
                 <div class="portfolio-item elec">
-                    <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1558211583-d26f610c1eb1?q=80&w=600');"></div>
+                    <div class="portfolio-img-wrap"><img class="portfolio-img" src="https://images.unsplash.com/photo-1558211583-d26f610c1eb1?q=80&w=600" alt="Дизайнерське трекове світло" loading="lazy" decoding="async" width="600" height="320"></div>
                     <div class="portfolio-info">
                         <h3>Дизайнерське трекове світло</h3>
                         <p>Монтаж вбудованих шинопроводів та світлодіодних ліній у вітальні будинку.</p>
                     </div>
                 </div>
                 <div class="portfolio-item floor">
-                    <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=600');"></div>
+                    <div class="portfolio-img-wrap"><img class="portfolio-img" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=600" alt="Вирівнювання та фарбування стін" loading="lazy" decoding="async" width="600" height="320"></div>
                     <div class="portfolio-info">
                         <h3>Вирівнювання та фарбування стін</h3>
-                        <p>Фінішне шпаклювання під бокове світло, ідеально гладка геометрія кутів.</p>
+                        <p>Фінішне шпаклювання под бокове світло, ідеально гладка геометрія кутів.</p>
                     </div>
                 </div>
                 <div class="portfolio-item plumb">
-                    <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=600');"></div>
+                    <div class="portfolio-img-wrap"><img class="portfolio-img" src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=600" alt="Монтаж інсталяції та санфаянсу" loading="lazy" decoding="async" width="600" height="320"></div>
                     <div class="portfolio-info">
                         <h3>Монтаж інсталяції та санфаянсу</h3>
-                        <p>Встановлення підвісного унітазу з інтегрованою прихованою інсталяцією Geberit.</p>
+                        <p>Встановлення підвісного унітазу з інтегрованою прихованою інсталяцією.</p>
                     </div>
                 </div>
                 <div class="portfolio-item elec">
-                    <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=600');"></div>
+                    <div class="portfolio-img-wrap"><img class="portfolio-img" src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=600" alt="Штроблення та розводка під розетки" loading="lazy" decoding="async" width="600" height="320"></div>
                     <div class="portfolio-info">
-                        <h3>Штроблення та розводка під розетки</h3>
-                        <p>Розмітка точок споживання на кухні за попереднім дизайнерським планом.</p>
+                        <h3>Штроблення та розводка под розетки</h3>
+                        <p>Розмітка точок споживання на кухні за попереднім меблевим планом.</p>
                     </div>
                 </div>
                 <div class="portfolio-item floor">
-                    <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=600');"></div>
+                    <div class="portfolio-img-wrap"><img class="portfolio-img" src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=600" alt="Укладка масивної дошки" loading="lazy" decoding="async" width="600" height="320"></div>
                     <div class="portfolio-info">
-                        <h3>Укладка преміум ламінату</h3>
-                        <p>Надійне дерев'яне покриття підлоги, змонтоване в спальній кімнаті котеджу.</p>
+                        <h3>Укладка масивної дошки</h3>
+                        <p>Преміальне дерев'яне покриття підлоги, змонтоване в спальній кімнаті котеджу.</p>
                     </div>
                 </div>
             </div>
@@ -576,12 +797,12 @@
                 <div class="review-card">
                     <div class="review-name">Артур Дмитренко</div>
                     <div class="review-stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
-                    <p class="review-text">"Замовляли у Гадіра ремонт сантехніки та укладку великого кахлю в новому будинку. Робота виконана бездоганно. Все підписано, шви плитки рівні!"</p>
+                    <p class="review-text">"Замовляли у Гадіра ремонт сантехніки та укладку великого кахлю в новому будинку. Робота виконана бездоганно. Колекторний вузол зібраний ідеально, все підписано, шви плитки рівні!"</p>
                 </div>
                 <div class="review-card">
                     <div class="review-name">Марія Олександрова</div>
                     <div class="review-stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
-                    <p class="review-text">"Повністю замінили електрику та вирівняли підлогу у трикімнатній квартирі. Працювали швидко, шви проштробили акуратно. Гадір постійно звітував у Telegram."</p>
+                    <p class="review-text">"Повністю замінили електрику та вирівняли підлогу у трикімнатній квартирі. Працювали швидко, шви проштробили акуратно. Гадір постійно звітував у Telegram. Рекомендую!"</p>
                 </div>
             </div>
         </section>
@@ -592,21 +813,49 @@
             <h2 class="section-title">Калькулятор вартості ремонту</h2>
             <div class="calculator-box">
                 <div class="form-group">
-                    <label>Оберіть тип внутрішніх робіт:</label>
+                    <label for="calc-type">Оберіть тип внутрішніх робіт:</label>
+                    <!--
+                        Типи послуг відповідають переліку конкурента ОДСК (7 позицій).
+                        Ціни встановлені на 40–50 грн нижче ринкового рівня ОДСК по кожній позиції.
+                        data-unit — одиниця виміру (м² або точок), підставляється у підказку автоматично.
+                        data-default — початкове значення поля обсягу при перемиканні типу.
+                    -->
                     <select id="calc-type" onchange="calculatePrice()">
-                        <option value="5000">Комплексна інженерія квартири/будинку (від 5000 грн/м²)</option>
-                        <option value="700">Укладка керамограніту та кахлю (від 700 грн/m²)</option>
-                        <option value="400">Електромонтажні роботи під ключ (від 400 грн/точка)</option>
-                        <option value="300">Монтаж підлоги та оздоблення стін (від 300 грн/м²)</option>
+                        <optgroup label="── Комплексний ремонт ──">
+                        <option value="1950"  data-unit="м²"    data-default="60"  >Дизайн інтер'єрів (від 1 950 грн/м²)</option>
+                        <option value="3450"  data-unit="м²"    data-default="70"  >Ремонт у новобудові (від 3 450 грн/м²)</option>
+                        <option value="5450"  data-unit="м²"    data-default="70"  >Євроремонт (від 5 450 грн/м²)</option>
+                        <option value="3950"  data-unit="м²"    data-default="50"  >Терміновий ремонт квартир (від 3 950 грн/м²)</option>
+                        </optgroup>
+                        <optgroup label="── Будівництво ──">
+                        <option value="7450"  data-unit="м²"    data-default="120" >Будівництво будинків та котеджів (від 7 450 грн/м²)</option>
+                        </optgroup>
+                        <optgroup label="── Підлога ──">
+                        <option value="750"   data-unit="м²"    data-default="50"  >Укладка плитки / керамограніту (від 750 грн/м²)</option>
+                        <option value="150"   data-unit="м²"    data-default="50"  >Монтаж ламінату / паркетної дошки (від 150 грн/м²)</option>
+                        <option value="220"   data-unit="м²"    data-default="60"  >Стяжка підлоги / наливна підлога (від 220 грн/м²)</option>
+                        </optgroup>
+                        <optgroup label="── Стіни та стеля ──">
+                        <option value="130"   data-unit="м²"    data-default="80"  >Шпаклювання стін та стелі (від 130 грн/м²)</option>
+                        <option value="160"   data-unit="м²"    data-default="60"  >Штукатурка (від 160 грн/м²)</option>
+                        <option value="340"   data-unit="м²"    data-default="80"  >Оздоблювальні роботи — комплекс (від 340 грн/м²)</option>
+                        </optgroup>
+                        <optgroup label="── Сантехніка та електрика ──">
+                        <option value="390"   data-unit="точок" data-default="20"  >Сантехніка — встановлення (від 390 грн/точка)</option>
+                        <option value="440"   data-unit="точок" data-default="30"  >Електромонтажні роботи (від 440 грн/точка)</option>
+                        </optgroup>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>Вкажіть об'єм (площа в м² або кількість точок):</label>
-                    <input type="number" id="calc-area" value="70" min="1" oninput="calculatePrice()">
+                    <label for="calc-area">
+                        Вкажіть об'єм: площа, <span id="calc-unit-label">м²</span>
+                    </label>
+                    <input type="number" id="calc-area" value="60" min="1" max="2000" step="1" inputmode="numeric" oninput="calculatePrice()">
                 </div>
                 <div class="calc-result">
-                    Орієнтовна вартість робіт: <span id="total-price">350 000</span> грн
+                    Орієнтовна вартість робіт: <span id="total-price" aria-live="polite">117 000</span> грн
                 </div>
+                <p style="margin-top: 16px; font-size: 13px; color: var(--text-main); text-align: center;">Розрахунок орієнтовний. Точну вартість визначить інженер після безкоштовного виїзду на заміри.</p>
             </div>
         </section>
     </div>
@@ -616,12 +865,20 @@
             <h2 class="section-title">Питання та відповіді</h2>
             <div class="faq-container">
                 <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">Чи купуєте ви чорнові матеріали самостійно? <span>+</span></div>
-                    <div class="faq-answer"><p style="padding-bottom: 22px;">Так, ми повністю прораховуємо, замовляємо та привозимо якісні кабелі, труби та будівельні суміші. Надаємо детальні звіти та чеки з баз Одеси.</p></div>
+                    <h3>
+                        <button type="button" class="faq-question" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-answer-1" id="faq-q-1">
+                            Чи купуєте ви чорнові матеріали самостійно? <span aria-hidden="true">+</span>
+                        </button>
+                    </h3>
+                    <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-q-1"><p style="padding-bottom: 22px;">Так, ми повністю прораховуємо, замовляємо та привозимо якісні кабелі, труби та будівельні суміші. Надаємо детальні звіти та чеки з баз Одеси.</p></div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">Як відбувається оплата робіт? <span>+</span></div>
-                    <div class="faq-answer"><p style="padding-bottom: 22px;">Ми працюємо без передоплати за роботу. Весь процес ділиться на прозорі етапи. Ви приймаєте готовий етап (наприклад, розведення проводки), перевіряєте і тільки тоді оплачуєте.</p></div>
+                    <h3>
+                        <button type="button" class="faq-question" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-answer-2" id="faq-q-2">
+                            Як відбувається оплата робіт? <span aria-hidden="true">+</span>
+                        </button>
+                    </h3>
+                    <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-q-2"><p style="padding-bottom: 22px;">Ми працюємо без передоплати за роботу. Весь процес ділиться на прозорі етапи. Ви приймаєте готовий етап (наприклад, розведення проводки), перевіряєте і тільки тоді оплачуєте.</p></div>
                 </div>
             </div>
         </section>
@@ -629,7 +886,7 @@
 
     <div id="page-contacts">
         <section id="contacts" class="reveal">
-            <h2 class="section-title">Викликати майстра на заміри</h2>
+            <h2 class="section-title">Викликати Гадіра на заміри</h2>
             <div class="contact-container">
                 <div class="contact-info-block">
                     <h3 style="font-size: 22px; margin-bottom: 20px; font-weight: 800; color: var(--text-title);">Контактна інформація</h3>
@@ -651,10 +908,18 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form onsubmit="alert('Дякуємо! Гашимов Гадір зв\'яжеться з вами найближчим часом.'); return false;">
-                        <input type="text" placeholder="Ваше Ім'я" required>
-                        <input type="tel" placeholder="Номер телефону" required>
-                        <textarea rows="3" placeholder="Опишіть ваше завдання (наприклад: кахель у ванній кімнаті, ремонт сантехніки та електрики у квартирі)"></textarea>
+                    <form id="contact-form" novalidate onsubmit="return handleContactSubmit(event)">
+                        <label class="visually-hidden" for="cf-name">Ваше ім'я</label>
+                        <input type="text" id="cf-name" name="name" placeholder="Ваше Ім'я" autocomplete="name" required minlength="2">
+                        <div class="form-error" id="cf-name-error" aria-live="polite"></div>
+
+                        <label class="visually-hidden" for="cf-phone">Номер телефону</label>
+                        <input type="tel" id="cf-phone" name="phone" placeholder="Номер телефону" autocomplete="tel" inputmode="tel" pattern="[+0-9()\s-]{10,17}" required>
+                        <div class="form-error" id="cf-phone-error" aria-live="polite"></div>
+
+                        <label class="visually-hidden" for="cf-message">Опис завдання</label>
+                        <textarea id="cf-message" name="message" rows="3" placeholder="Опишіть ваше завдання (наприклад: кахель у ванній кімнаті, ремонт сантехніки та електрики у квартирі в Одесі)"></textarea>
+
                         <button type="submit" class="btn" style="width: 100%; justify-content: center;">Надіслати заявку <i data-lucide="send"></i></button>
                     </form>
                 </div>
@@ -663,65 +928,50 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 МайстерВдомі. Якісна сантехніка, електрика, кахель та підлога в Одесі. Керівник: Гашимов Гадір.</p>
+        <p>&copy; <span id="copyright-year">2026</span> МайстерВдомі. Якісна сантехніка, електрика, кахель та підлога в Одесі. Керівник: Гашимов Гадір.</p>
     </footer>
 
     <script>
-        // Ініціалізація Lucide іконок
-        lucide.createIcons();
-
-        /* ==========================================================
-           БЕЗПЕКА ТА ЗАХИСТ ВІД ГОРЯЧИХ КЛАВІШ
-        ========================================================== */
-        document.addEventListener('keydown', function(e) {
-            if (
-                e.key === 'F12' || 
-                (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C' || e.key === 'i' || e.key === 'j' || e.key === 'c')) || 
-                (e.ctrlKey && (e.key === 'u' || e.key === 'U' || e.key === 's' || e.key === 'S'))
-            ) {
-                e.preventDefault();
-                return false;
-            }
-        });
-
-        document.addEventListener('copy', function(e) { e.preventDefault(); });
-
-        /* ==========================================================
-           ТЕМНАЯ / СВЕТЛАЯ ТЕМА
-        ========================================================== */
-        function toggleTheme() {
+        function setTheme(theme) {
             const body = document.body;
             const icon = document.getElementById('theme-icon');
-            const currentTheme = body.getAttribute('data-theme');
-            
-            if (currentTheme === 'dark') {
-                body.removeAttribute('data-theme');
-                icon.setAttribute('data-lucide', 'moon');
-            } else {
+            const btn = document.querySelector('.theme-toggle');
+
+            if (theme === 'dark') {
                 body.setAttribute('data-theme', 'dark');
                 icon.setAttribute('data-lucide', 'sun');
+            } else {
+                body.removeAttribute('data-theme');
+                icon.setAttribute('data-lucide', 'moon');
             }
-            lucide.createIcons();
+            btn.setAttribute('aria-pressed', String(theme === 'dark'));
+            try {
+                localStorage.setItem('mv-theme', theme);
+            } catch (err) {}
+            renderIcons();
         }
 
-        /* ==========================================================
-           АДАПТИВНА НАВІГАЦІЯ ТА МЕНЮ-ГАМБУРГЕР
-        ========================================================== */
-        function navigateTo(targetId) {
+        function toggleTheme() {
+            const isDark = document.body.getAttribute('data-theme') === 'dark';
+            setTheme(isDark ? 'light' : 'dark');
+        }
+
+        function navigateTo(targetId, evt) {
+            if (evt) evt.preventDefault();
+
             const targetElement = document.getElementById('page-' + targetId);
-            if(targetElement) {
-                const headerOffset = 80;
+            if (targetElement) {
+                const header = document.querySelector('header');
+                const headerOffset = (header ? header.offsetHeight : 80) + 10;
                 const elementPosition = targetElement.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
                 window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
             }
 
-            const links = document.querySelectorAll('.nav-link');
-            links.forEach(link => link.classList.remove('active-nav'));
-            
-            if (event && event.target && event.target.classList.contains('nav-link')) {
-                event.target.classList.add('active-nav');
+            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active-nav'));
+            if (evt && evt.currentTarget && evt.currentTarget.classList.contains('nav-link')) {
+                evt.currentTarget.classList.add('active-nav');
             }
             toggleMenu(true);
         }
@@ -729,91 +979,281 @@
         function toggleMenu(forceClose = false) {
             const menu = document.getElementById('nav-menu');
             const icon = document.getElementById('menu-icon');
-            
-            if (forceClose || menu.classList.contains('open')) {
-                menu.classList.remove('open');
-                icon.setAttribute('data-lucide', 'menu');
-            } else {
-                menu.classList.add('open');
-                icon.setAttribute('data-lucide', 'x');
-            }
-            lucide.createIcons();
+            const btn = document.querySelector('.menu-btn');
+            const isOpen = menu.classList.contains('open');
+            const shouldOpen = forceClose ? false : !isOpen;
+
+            menu.classList.toggle('open', shouldOpen);
+            icon.setAttribute('data-lucide', shouldOpen ? 'x' : 'menu');
+            btn.setAttribute('aria-expanded', String(shouldOpen));
+            btn.setAttribute('aria-label', shouldOpen ? 'Закрити меню' : 'Відкрити меню');
+            renderIcons();
         }
 
-        /* ==========================================================
-           КАЛЬКУЛЯТОР
-        ========================================================== */
+        document.addEventListener('click', function (e) {
+            const menu = document.getElementById('nav-menu');
+            const btn = document.querySelector('.menu-btn');
+            if (menu.classList.contains('open') && !menu.contains(e.target) && !btn.contains(e.target)) {
+                toggleMenu(true);
+            }
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') toggleMenu(true);
+        });
+
         function calculatePrice() {
-            const typePrice = document.getElementById('calc-type').value;
-            const area = document.getElementById('calc-area').value;
-            const total = typePrice * area;
-            document.getElementById('total-price').innerText = total.toLocaleString('uk-UA');
+            const typeSelect = document.getElementById('calc-type');
+            const areaInput = document.getElementById('calc-area');
+            const resultEl = document.getElementById('total-price');
+
+            const unitPrice = parseFloat(typeSelect.value) || 0;
+            let area = parseFloat(areaInput.value);
+            const maxArea = parseFloat(areaInput.max) || 2000;
+
+            if (isNaN(area) || area < 1) area = 1;
+            if (area > maxArea) area = maxArea;
+            areaInput.value = area;
+
+            const total = Math.round(unitPrice * area);
+            animateNumber(resultEl, total);
         }
 
-        /* ==========================================================
-           FAQ АККОРДЕОН
-        ========================================================== */
-        function toggleFaq(element) {
-            const answer = element.nextElementSibling;
-            const span = element.querySelector('span');
-            
-            if (answer.style.maxHeight && answer.style.maxHeight !== "0px") {
-                answer.style.maxHeight = "0px";
-                span.innerText = "+";
+        function animateNumber(el, target) {
+            const start = parseInt(el.dataset.raw || '0', 10);
+            const duration = 400;
+            const startTime = performance.now();
+
+            function step(now) {
+                const progress = Math.min((now - startTime) / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                const current = Math.round(start + (target - start) * eased);
+                el.innerText = current.toLocaleString('uk-UA');
+                if (progress < 1) {
+                    requestAnimationFrame(step);
+                } else {
+                    el.dataset.raw = String(target);
+                }
+            }
+            requestAnimationFrame(step);
+        }
+
+        function toggleFaq(button) {
+            const answer = document.getElementById(button.getAttribute('aria-controls'));
+            const span = button.querySelector('span');
+            const isOpen = button.getAttribute('aria-expanded') === 'true';
+
+            if (isOpen) {
+                answer.style.maxHeight = '0px';
+                span.innerText = '+';
+                button.setAttribute('aria-expanded', 'false');
             } else {
-                answer.style.maxHeight = answer.scrollHeight + "px";
-                span.innerText = "-";
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                span.innerText = '\u2212';
+                button.setAttribute('aria-expanded', 'true');
             }
         }
 
-        /* ==========================================================
-           ФІЛЬТРАЦІЯ ГАЛЕРЕЇ ПОРТФОЛІО
-        ========================================================== */
-        function filterPortfolio(category) {
+        function filterPortfolio(category, evt) {
             const items = document.querySelectorAll('.portfolio-item');
-            
+
             items.forEach(item => {
                 item.style.opacity = '0';
                 item.style.transform = 'scale(0.95) translateY(10px)';
-                
+
                 setTimeout(() => {
-                    if (category === 'all' || item.classList.contains(category)) {
-                        item.style.display = 'block';
-                        setTimeout(() => {
+                    const match = category === 'all' || item.classList.contains(category);
+                    item.style.display = match ? 'block' : 'none';
+                    if (match) {
+                        requestAnimationFrame(() => {
                             item.style.opacity = '1';
                             item.style.transform = 'scale(1) translateY(0)';
-                        }, 50);
-                    } else {
-                        item.style.display = 'none';
+                        });
                     }
                 }, 300);
             });
 
-            const buttons = document.querySelectorAll('.tab-btn');
-            buttons.forEach(btn => btn.classList.remove('active'));
-            if (event && event.target) {
-                event.target.classList.add('active');
-            }
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            if (evt && evt.currentTarget) evt.currentTarget.classList.add('active');
         }
 
         /* ==========================================================
-           SCROLL REVEAL АНИМАЦИЯ
+           ОБНОВЛЕННАЯ ФОРМА — ОТПРАВКА ЗАЯВКИ В ТЕЛЕГРАМ БОТ
         ========================================================== */
-        function reveal() {
-            const reveals = document.querySelectorAll(".reveal");
-            for (let i = 0; i < reveals.length; i++) {
-                const windowHeight = window.innerHeight;
-                const elementTop = reveals[i].getBoundingClientRect().top;
-                const elementVisible = 80;
-                
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
-                }
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const nameInput = document.getElementById('cf-name');
+            const phoneInput = document.getElementById('cf-phone');
+            const messageInput = document.getElementById('cf-message');
+            const nameError = document.getElementById('cf-name-error');
+            const phoneError = document.getElementById('cf-phone-error');
+
+            nameError.textContent = '';
+            phoneError.textContent = '';
+            nameInput.classList.remove('invalid');
+            phoneInput.classList.remove('invalid');
+
+            let valid = true;
+
+            if (nameInput.value.trim().length < 2) {
+                nameError.textContent = "Вкажіть, будь ласка, ваше ім'я";
+                nameInput.classList.add('invalid');
+                valid = false;
             }
+
+            const phoneDigits = phoneInput.value.replace(/\D/g, '');
+            if (phoneDigits.length < 10 || phoneDigits.length > 13) {
+                phoneError.textContent = 'Перевірте номер телефону';
+                phoneInput.classList.add('invalid');
+                valid = false;
+            }
+
+            if (!valid) {
+                (nameInput.classList.contains('invalid') ? nameInput : phoneInput).focus();
+                return false;
+            }
+
+            // ВШИТЫ ВАШИ ДАННЫЕ TG
+            const TELEGRAM_BOT_TOKEN = '8853167458:AAExs_tfZz2_PxiH4rfk9CgBLVST6MuUNfw'; 
+            const TELEGRAM_CHAT_ID = '6029899854'; 
+
+            // Формируем красивый текст для Telegram (Используем экранирование и разметку HTML для надежности)
+            const escapeHTML = str => str.replace(/[&<>'"]/g, 
+                tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
+            );
+
+            const textMessage = `🔔 <b>Нова заявка з сайту МайстерВдомі!</b>\n\n` +
+                                `👤 <b>Ім'я:</b> ${escapeHTML(nameInput.value.trim())}\n` +
+                                `📞 <b>Телефон:</b> ${phoneInput.value.trim()}\n` +
+                                `💬 <b>Завдання:</b> ${escapeHTML(messageInput.value.trim() || 'Не вказано')}`;
+
+            const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            
+            if (submitBtn) submitBtn.disabled = true; // Блокируем кнопку, чтобы избежать повторных кликов
+
+            fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    chat_id: TELEGRAM_CHAT_ID,
+                    text: textMessage,
+                    parse_mode: 'HTML'
+                })
+            })
+            .then(response => {
+                if (response.ok) {
+                    showToast("Дякуємо! Гашимов Гадір зв'яжеться з вами найближчим часом.");
+                    form.reset();
+                } else {
+                    showToast("Помилка відправки заявки. Спробуйте пізніше.");
+                }
+            })
+            .catch(error => {
+                console.error('Ошибка сети:', error);
+                showToast("Помилка мережі. Спробуйте ще раз.");
+            })
+            .finally(() => {
+                if (submitBtn) submitBtn.disabled = false;
+            });
+
+            return false;
         }
 
-        window.addEventListener("scroll", reveal);
-        window.addEventListener("load", reveal);
+        function showToast(message, duration = 4000) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-text').textContent = message;
+            toast.classList.add('show');
+            clearTimeout(showToast._timer);
+            showToast._timer = setTimeout(() => toast.classList.remove('show'), duration);
+        }
+
+        function initRevealObserver() {
+            const reveals = document.querySelectorAll('.reveal');
+            if (!reveals.length) return;
+
+            if (!('IntersectionObserver' in window)) {
+                reveals.forEach(r => r.classList.add('active'));
+                return;
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+            reveals.forEach(r => observer.observe(r));
+        }
+
+        function initScrollSpy() {
+            const sections = document.querySelectorAll('[id^="page-"]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            if (!sections.length || !('IntersectionObserver' in window)) return;
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.id;
+                        navLinks.forEach(link => link.classList.remove('active-nav'));
+                        const match = document.querySelector('.nav-link[href="#' + id + '"]');
+                        if (match) match.classList.add('active-nav');
+                    }
+                });
+            }, { threshold: 0, rootMargin: '-45% 0px -50% 0px' });
+
+            sections.forEach(s => observer.observe(s));
+        }
+
+        function initStatsCounters() {
+            const counters = document.querySelectorAll('.stat-count');
+            if (!counters.length || !('IntersectionObserver' in window)) {
+                counters.forEach(c => { c.innerText = c.dataset.target; });
+                return;
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateNumber(entry.target, parseInt(entry.target.dataset.target, 10));
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            counters.forEach(s => observer.observe(s));
+        }
+
+        function initScrollProgress() {
+            const bar = document.getElementById('scroll-progress');
+            if (!bar) return;
+
+            function update() {
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+                bar.style.width = pct + '%';
+            }
+            window.addEventListener('scroll', update, { passive: true });
+            update();
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const yearEl = document.getElementById('copyright-year');
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+            calculatePrice();
+            initRevealObserver();
+            initScrollSpy();
+            initStatsCounters();
+            initScrollProgress();
+
+            const currentTheme = document.body.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+            setTheme(currentTheme);
+        });
     </script>
 </body>
 </html>
